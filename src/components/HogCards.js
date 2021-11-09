@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 function HogCards({ hog }) {
-    const { name, specialty, greased, weight, image } = hog
+    const { name, specialty, weight, image } = hog
     const [cliked, setClicked] = useState(false)
 
     const handleClick = (e, hog) => {
@@ -10,7 +10,6 @@ function HogCards({ hog }) {
     const toShow = (<div>
         <h2>{specialty}</h2>
         <h4>{weight}</h4>
-        <p>greased: {greased}</p>
     </div>
     )
 
